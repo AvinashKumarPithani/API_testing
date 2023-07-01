@@ -3,7 +3,7 @@ const express = require("express");
 
 const app = express();
 
-app.use(express.json());
+app.use(express.json()); //provides a parser which help us to parse the data stream that we receive from the client
 
 app.use(myMiddleWare);
 
